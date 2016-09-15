@@ -1,15 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>五子棋</title>
+
+@extends('Home.base')
+@section('css')
 	<link rel="stylesheet" type="text/css" href="{{asset('public/Home/game/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('public/Home/game/css/style.css')}}">
-</head>
-<body>
-<div style="float:right;margin-right:40px;display:inline"><button class="btn btn-default" id="restart">从新开始</button></div>
-<canvas id="chess" width="450px" height="450px" ></canvas>
+@endsection
+@section('categorys')
+	<li><a href="categories/C-Cpp/index.html" class="animsition-link">C/Cpp<small>(2)</small></a></li>
 
-<script type="text/javascript" src="{{asset('public/Home/game/js/script.js')}}"></script>
-</body>
-</html>
+	<li><a href="categories/CSS3/index.html" class="animsition-link">CSS3<small>(1)</small></a></li>
+@endsection
+@section('link')
+   <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
+   <li><a href="http://homeway.me/" class="animsition-link">小草</a></li>
+@endsection
+
+@section('content')
+<section id="intro">
+    <div class="container">
+	     <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <canvas id="chess" width="450px" height="450px" ></canvas>
+                <div style="float:right;margin-right:150px;"><button class="btn btn-default" id="restart">从新开始</button></div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+    </div>
+</section>         
+@endsection
+
+@section('js')
+ <script type="text/javascript" src="{{asset('public/Home/game/js/script.js')}}"></script>
+@endsection
+
+
+
+
+
+
