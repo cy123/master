@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="KIERAN'S BLOG">
     <meta name="author" content="Kieran">
-    <meta name="description" content="Always Creative." />
+    <meta name="description" content="Always Creative." /> 
     <meta name="keywords" content="Kieran,BLOG" />
 
     <!-- Favicon, (keep icon in root folder) -->
@@ -86,13 +86,15 @@
         <!-- Lists in Slidebars -->
         <ul class="sb-menu">
             <li><a href="index.html" class="animsition-link" title="Home">Home</a></li>
-            <li><a href="archives/index.html" class="animsition-link" title="archive">archives</a></li>
+            <li><a href="archives/index.html" class="animsition-link" title="archive">Archives</a></li>
             <!-- Dropdown Menu -->
 			         
         	<li>
-        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+        		<a class="sb-toggle-submenu">Programming<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
-				  	@yield('categorys')
+				    <li><a href="categories/C-Cpp/index.html" class="animsition-link">C/Cpp<small>(2)</small></a></li>
+
+	                <li><a href="categories/CSS3/index.html" class="animsition-link">Css3<small>(1)</small></a></li>
 				    
 				</ul>
         	</li>
@@ -108,7 +110,7 @@
         </ul>
         <!-- Lists in Slidebars -->
         <ul class="sb-menu secondary">
-            <li><a href="game.html" class="animsition-link" title="resume">game</a></li>
+            <li><a href="game.html" class="animsition-link" title="resume">Game</a></li>
             <li><a href="resume.html" class="animsition-link" title="resume">Resume</a></li>
             <li><a href="about.html" class="animsition-link" title="about">About</a></li>
             

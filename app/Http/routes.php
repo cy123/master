@@ -48,10 +48,15 @@ Route::group(['middleware' => ['web'],'namespace'=>'Admin'], function () {
     //
     
     Route::get('cy','IndexController@index');
+    Route::get('theme','IndexController@theme');
     Route::get('resume/index','ResumeController@index');
     Route::resource('resume/add',"ResumeController@add");
     Route::resource('resume',"ResumeController");
     
+    //articles
+    Route::resource('articles',"ArticlesController");
+    //Route::get('articles/add',"ArticlesController@add");  
+    Route::resource('articleCategory',"ArticleCategoryController");
 
     
 });

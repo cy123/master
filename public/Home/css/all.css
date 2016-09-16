@@ -37,18 +37,14 @@
 /* Icon Fonts
 *********************************/
 /* Font-face Icons */
-/*
+
 @font-face {
-	font-family: 'flexslider-icon';
-	src:url('http://go.kieran.top/fonts/flexslider-icon.eot');
-	src:url('http://go.kieran.top/fonts/flexslider-icon.eot?') format('embedded-opentype'),
-		url('http://go.kieran.top/fonts/flexslider-icon.woff') format('woff'),
-		url('http://go.kieran.top/fonts/flexslider-icon.ttf') format('truetype'),
-		url('http://go.kieran.top/fonts/flexslider-icon.svg') format('svg');
+	font-family: 'dancingfont';
+	src:url('/public/Home/fonts/DancingScript-Regular.otf');
 	font-weight: normal;
 	font-style: normal;
 }
-*/
+
 
 /* FlexSlider Necessary Styles
 *********************************/
@@ -850,9 +846,8 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
 .sb-slidebar a {
 	color: #666; /* Link colour. */
 	text-decoration: none;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 13px
+	/*font-weight: 700;*/
+	font-size: 13px;
 }
 .sb-slidebar a:hover {
 	color: #fff; /* Link hover colour. */
@@ -869,7 +864,7 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
 	margin: 0;
 	color: #666;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 20px;
 	font-family: 'Open Sans', Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
@@ -880,11 +875,12 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
 	border-bottom: none; /* Removed bottom border from last list item. */
 }
 .sb-menu li a {
-	font-family: 'Open Sans', Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+	
+	font-family: "dancingfont","Hiragino Sans GB", "Microsoft YaHei";
 	width: 100%; /* Makes links full width. */
 	display: inline-block;
-	font-weight: 600;
-	font-style: normal;
+	/*font-style: normal;*/
+	font-size:18px;
 	color: #666;
 	cursor: pointer;
 	line-height: 20px;
@@ -902,13 +898,13 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
 }
 /* Sb Dropdown */
 li.sb-toggle-submenu {
-	font-weight: 600;
+	/*font-weight: 600;*/
 	text-transform: uppercase;
 	font-size: 13px;
 	border-left: 3px solid transparent;
 	padding: 3px 10px;
 	cursor: pointer;
-	font-family: 'Open Sans', Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+	/*font-family: 'Open Sans', Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;*/
 }
 li.sb-toggle-submenu:hover {
 	color: #fff; /* Link hover colour. */
@@ -3391,12 +3387,12 @@ footer .footer_bottom {
 .readMore a {
 	font-size: 12px;
 	color: gray!important;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border: 1px solid gray;
-	border-radius: 20px;
+	border-radius: 5px;
 }
 .readMore a:hover {
 	background-color: gray;

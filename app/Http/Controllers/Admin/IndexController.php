@@ -10,4 +10,9 @@ class IndexController extends Controller
         //echo 'd';die;
         return view('Admin/index');
     }
+    
+    public function theme()
+    {
+        return view('Admin/theme');
+    }
 }
