@@ -19,7 +19,7 @@
 </head>
 
 <body class="gray-bg">
-    <div class=""><a class="btn btn-info" href="articles/add" target="iframe6" >添加分类</a></div>
+    <div class=""><a class="btn btn-info" href="articles/add" target="iframe5" >写文章</a></div>
     <div class="wrapper wrapper-content animated fadeInRight">
 
         <div class="row">
@@ -51,30 +51,27 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>姓名</th>
-                                    <th>性别</th>
-                                    <th>年龄</th>
+                                    <th>标题</th>
+                                    <th>分类名</th>
+                                    <th>标签</th>
+                                    <th>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($articles as $article)
                                 <tr>
-                                    <td>1</td>
-                                    <td>张三</td>
-                                    <td>男</td>
-                                    <td>23</td>
+                                    <td>{{$article->id}}</td>
+                                    <td>{{$article->title}}</td>
+                                    <td>{{$article->name}}</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="{{url('articles/'.$article->id.'/edit')}}" class="btn btn-info" target="iframe5">修改</a>
+                                        <form action="{{url('/articles'.$article->id)}}" method="post" target="iframe5" style="display: inline-block">
+                                            <button type="submit" class="btn btn-danger">删除</button>
+                                        </form>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>李四</td>
-                                    <td>男</td>
-                                    <td>27</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>王麻子</td>
-                                    <td>男</td>
-                                    <td>65</td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
 

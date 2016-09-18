@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>myblog</title>
+  <title>catteacher</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -92,7 +92,7 @@
         	<li>
         		<a class="sb-toggle-submenu">Programming<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
-				    <li><a href="categories/C-Cpp/index.html" class="animsition-link">C/Cpp<small>(2)</small></a></li>
+				    <li><a href="categories/C-Cpp/index.html" class="animsition-link">Php<small>(2)</small></a></li>
 
 	                <li><a href="categories/CSS3/index.html" class="animsition-link">Css3<small>(1)</small></a></li>
 				    
@@ -142,14 +142,8 @@
                             <li><a href="index.html" class="animsition-link">catteacher</a></li>
                             <li class="nolink"><span>Always </span>Creative.</li>
                             
-                            <li><a href="#" title="Github" target="_blank"><i class="icon-github"></i></a></li>
-                            
-                            
-                            <li><a href="#" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
-                            
-                            
-                            
-                            
+                            <li><a href="https://github.com/cy-github/master/tree/master" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+            
                             <li><a href="#" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
                             
                             <li class="nolink"><span>Welcome!</span></li>

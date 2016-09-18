@@ -42,8 +42,8 @@ Route::get('about.html','Home\HomeController@about');
 Route::get('resume.html','Home\HomeController@resume');
 Route::get('game.html','Home\HomeController@game');
 
-//admin
-
+//Admin
+ 
 Route::group(['middleware' => ['web'],'namespace'=>'Admin'], function () {
     //
     

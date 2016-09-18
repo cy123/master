@@ -18,19 +18,20 @@
 </head>
 
 <body class="gray-bg">
-    <h3>添加文章</h3>
+    <h3>编辑文章</h3>
     <div class="wrapper wrapper-content animated fadeInRight">
 
         <div class="row">
             <div class="col-sm-10">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <form class="form-horizontal" role="form" action="{{url('/articles')}}" method="post" target="iframe5">
+                        <form class="form-horizontal" role="form" action="{{url('/articles/'.$article->id)}}" method="post" target="iframe5">
                             {!! csrf_field() !!}
+                            <input type="hidden" name="_method" value="PUT">
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label">标题</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control"  name="title" placeholder="title">
+                                <input type="text" class="form-control"  name="title" value="{{$article->title}}" placeholder="title">
                                 </div>
                             </div>
                              <div class="form-group">
@@ -43,9 +44,8 @@
                                 <label class="col-sm-2 control-label">所属分类</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" name="cate_id">
-                                        <option value='0'>分类名</option>
                                         @foreach($allCates as $allCate)
-                                            <option value="{{$allCate->id}}">{{$allCate->name}}</option>
+                                        <option value="{{$allCate->id}}">{{$allCate->name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -59,7 +59,7 @@
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">正文</label>
                                 <div class="col-sm-10">
-                                    <div id="test-editormd"><textarea rows="" cols=""></textarea></div>
+                                    <div id="test-editormd"><textarea rows="" cols="">{{$article->content}}</textarea></div>
                                 </div>
                             </div> 
                             
