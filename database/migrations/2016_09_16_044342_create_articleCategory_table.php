@@ -12,7 +12,7 @@ class CreateArticleCategoryTable extends Migration
      */
     public function up()
     {
-        Schema::create('article_categorys', function(Blueprint $table)
+        Schema::create('article_categories', function(Blueprint $table)
         {
             $table->increments('id');
             $table->integer('parent_id');
