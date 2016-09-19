@@ -41,9 +41,11 @@ Route::get('index.html','Home\HomeController@index');
 Route::get('about.html','Home\HomeController@about');
 Route::get('resume.html','Home\HomeController@resume');
 Route::get('game.html','Home\HomeController@game');
+Route::get('detail/{id?}','Home\HomeController@detail');
+//empty Route
+Route::get('empty','Home\HomeController@empty');
 
 //Admin
- 
 Route::group(['middleware' => ['web'],'namespace'=>'Admin'], function () {
     //
     

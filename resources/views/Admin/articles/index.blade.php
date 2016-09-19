@@ -66,7 +66,10 @@
                                     <td></td>
                                     <td>
                                         <a href="{{url('articles/'.$article->id.'/edit')}}" class="btn btn-info" target="iframe5">修改</a>
-                                        <form action="{{url('/articles'.$article->id)}}" method="post" target="iframe5" style="display: inline-block">
+                                        <form action="{{url('articles/'.$article->id)}}" method="post" target="iframe5" style="display: inline-block">
+                                            <!--删除时要使用DELETE方法-->
+                                            {!! csrf_field() !!}
+                                            <input type="hidden" name="_method" value="DELETE">
                                             <button type="submit" class="btn btn-danger">删除</button>
                                         </form>
                                     </td>

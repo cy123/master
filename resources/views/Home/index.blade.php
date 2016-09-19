@@ -7,7 +7,7 @@
 
 @section('scrollme')
 <section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(public/Home/img/5.jpg) no-repeat center center fixed;background-size: cover">
+    <div class="container-fluid element-img" style="background: url(public/Home/img/x.jpeg) no-repeat center center fixed;background-size: cover">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
                 <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
@@ -36,15 +36,16 @@
             
 <section id="intro">
     <div class="container">
+         @foreach($articles as $article)
 	     <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="post/37/index.html">小站正在完善中...</a></h3>
+                    <h3><a href="post/37/index.html">{{$article->title}}</a></h3>
                     <span>
                         <span class="post-meta">
 						  <time datetime="2016-05-10T08:01:05.000Z" itemprop="datePublished">
-							  2016-05-10
-						  </time>|<a href='tags/CSS3/index.html'>CSS3</a>
+							  {{$article->created_at}}
+						  </time>|<a href='tags/CSS3/index.html'>{{$article->name}}</a>
     
     
 						</span>
@@ -56,7 +57,7 @@
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="post/37/index.html">Read More...</a>
+                        <a href="detail/{{$article->id}}">more...</a>
                     </p>
                     
                 </div>
@@ -64,6 +65,7 @@
                 <hr class="nogutter">
             </div>
         </div>
+        @endforeach
         <nav class="pagination" role="pagination">
           <a class="pull-right" href="page/2/index.html">Older Posts ...</a>
         </nav>

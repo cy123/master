@@ -144,7 +144,7 @@
                             
                             <li><a href="https://github.com/cy-github/master/tree/master" title="Github" target="_blank"><i class="icon-github"></i></a></li>
             
-                            <li><a href="#" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            <li><a href="#" title="catnosleep-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
                             
                             <li class="nolink"><span>Welcome!</span></li>
                         </ul>

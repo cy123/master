@@ -17,6 +17,7 @@ class ArticlesController extends Controller
         //$articles=Articles::all();
         $articles=DB::table('articles')
                     ->leftJoin('article_categories','articles.cate_id','=','article_categories.id')
+                    ->select('articles.*','article_categories.name')
                     ->get();
         return view('Admin/articles/index')->with('articles',$articles);
     }
@@ -36,10 +37,10 @@ class ArticlesController extends Controller
         return view('Admin/articles/add')->with('allCates',$allCates);
     }
     
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $data=$request->all();
-        //var_dump($data);die;
-        
+        //var_dump($data);die;    
         $data['content']=$data['test-editormd-markdown-doc'];
         //unset($data['test-editormd-markdown-doc']);
         //unset($data['_token']);
@@ -50,6 +51,7 @@ class ArticlesController extends Controller
     public function edit(Request $request,$id)
     {
         $article=Articles::find($id);
+        //print_r($article);die;
         $allCates=ArticleCategory::all('id','name');
         return view('Admin/articles/edit')->with('article',$article)
         ->with('allCates',$allCates);
@@ -64,10 +66,18 @@ class ArticlesController extends Controller
         ];
         $article=Articles::find($id);
         if($article->update($data)){
-            echo 'success';
+            //echo 'success';
+            return redirect('articles');
         }else{
             echo 'faile';
         }
 
+    }
+
+    public function destroy($id)
+    {
+        $res=Articles::find($id)->delete(); 
+        if($res)
+        return redirect()->back()->withInput()->withErrors('删除成功！');
     }
 }

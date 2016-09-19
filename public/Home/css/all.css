@@ -3387,12 +3387,12 @@ footer .footer_bottom {
 .readMore a {
 	font-size: 12px;
 	color: gray!important;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border: 1px solid gray;
-	border-radius: 5px;
+	border-radius: 7px;
 }
 .readMore a:hover {
 	background-color: gray;

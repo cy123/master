@@ -15,7 +15,7 @@
 	     <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement" >
                 <div id="test-editormd-view2">
-                <textarea rows="" cols="" >{{$resumes->content}}</textarea>
+                    <textarea rows="" cols="" >{{$resumes->content}}</textarea>
                 </div>
                 <div class="clearfix"></div>
                 <hr class="nogutter">
