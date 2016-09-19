@@ -39,13 +39,16 @@ class ArticlesController extends Controller
     
     public function store(Request $request)
     {
-        $data=$request->all();
-        //var_dump($data);die;    
-        $data['content']=$data['test-editormd-markdown-doc'];
-        //unset($data['test-editormd-markdown-doc']);
+        $data=[
+            'title'=>$request->get('title'),
+            'content'=>$request->get('test-editormd-markdown-doc'),
+            'cate_id'=>$request->get('cate_id')
+        ];
+
         //unset($data['_token']);
         $res=Articles::create($data);
-        print_r($res);
+        if($res)
+        return redirect('articles');        
     }
 
     public function edit(Request $request,$id)
