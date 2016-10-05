@@ -90,12 +90,9 @@
             <!-- Dropdown Menu -->
 			         
         	<li>
-        		<a class="sb-toggle-submenu">Programming<span class="sb-caret"></span></a>
+        		<a class="sb-toggle-submenu">Category<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				    <li><a href="categories/C-Cpp/index.html" class="animsition-link">Php<small>(2)</small></a></li>
-
-	                <li><a href="categories/CSS3/index.html" class="animsition-link">Css3<small>(1)</small></a></li>
-				    
 				</ul>
         	</li>
             <li>
@@ -110,9 +107,9 @@
         </ul>
         <!-- Lists in Slidebars -->
         <ul class="sb-menu secondary">
-            <li><a href="game.html" class="animsition-link" title="resume">Game</a></li>
-            <li><a href="resume.html" class="animsition-link" title="resume">Resume</a></li>
-            <li><a href="about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="{{url('game.html')}}" class="animsition-link" title="resume">Game</a></li>
+            <li><a href="{{url('resume.html')}}" class="animsition-link" title="resume">Resume</a></li>
+            <li><a href="{{url('about.html')}}" class="animsition-link" title="about">About</a></li>
             
         </ul>
     </div>
@@ -139,7 +136,7 @@
                     <!-- Info-bar -->
                     <nav>
                         <ul class="nav">
-                            <li><a href="index.html" class="animsition-link">catteacher</a></li>
+                            <li><a href="{{url('index.html')}}" class="animsition-link">catteacher</a></li>
                             <li class="nolink"><span>Always </span>Creative.</li>
                             
                             <li><a href="https://github.com/cy-github/master/tree/master" title="Github" target="_blank"><i class="icon-github"></i></a></li>
