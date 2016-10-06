@@ -96,6 +96,7 @@
 
             $(function() {
                 testEditor = editormd("test-editormd", {
+
                     width   : "100%",
                     height  : 400,
                     syncScrolling : "single",

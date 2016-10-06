@@ -11,6 +11,8 @@ use App\Model\ArticleCategory;
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\Model;
 
+
+
 class ArticlesController extends Controller
 {
     public function index()
@@ -22,15 +24,7 @@ class ArticlesController extends Controller
                     ->get();
         return view('Admin/articles/index')->with('articles',$articles);
     }
-    
-    public function add()
-    {
-        if($_POST){
-            var_dump($_POST);die;
-        }
-        return view('Admin/articles/add');
-    }
-    
+
     public function show()
     {
         $allCates=ArticleCategory::all('id','name');

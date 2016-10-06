@@ -16,6 +16,7 @@ class HomeController extends Controller
                 ->leftJoin('article_categories','articles.cate_id','=','article_categories.id')
                 ->select('articles.*','article_categories.name')
                 ->get();
+        $tags='';
         return view('Home/index')->with('articles',$articles);
     }
     

@@ -90,7 +90,10 @@
             <li>
                 <a class="sb-toggle-submenu">Tags<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
-				    <li><a href="" class="animsition-link">Php<small>(2)</small></a></li>
+				    <!--
+                    <li><a href="" class="animsition-link">Php<small>(2)</small></a></li>
+                    -->
+                    @yield('tags')
 				</ul>
             </li>
             <!-- Dropdown Menu -->

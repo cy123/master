@@ -1,8 +1,13 @@
 @extends('Home.base')
+
+@section('tags')
+    @foreach($tags as $tag)
+        <li><a href="" class="animsition-link">{{''}}<small>(2)</small></a></li>
+    @endforeach
+@endsection
+
 @section('link')
    <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
-
-   <li><a href="http://homeway.me/" class="animsition-link">灏忚崏</a></li>
 @endsection
 
 @section('scrollme')
@@ -28,7 +33,6 @@
         <div class="herofade beige-dk"></div>
     </div>
 </section>
-
 @endsection
 
 @section('content')

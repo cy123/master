@@ -81,6 +81,9 @@
                             <li>
                                 <a class="J_menuItem" href="articleCategory">文章分类</a>
                             </li>
+                            <li>
+                                <a class="J_menuItem" href="tags">文章标签</a>
+                            </li>
                         </ul>
                     </li>
 
