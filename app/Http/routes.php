@@ -10,6 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
 /*
 Route::get('/', function () {
     return view('welcome');
@@ -27,27 +28,16 @@ Route::get('/', function () {
 |
 */
 
-/*
-Route::group(['middleware' => ['web'],'namespace'=>'Home'], function () {
-    //
-    
-    
-    
-});
-*/
-
+/*home*/
 Route::get('/','Home\HomeController@index');
 Route::get('index.html','Home\HomeController@index');
 Route::get('about.html','Home\HomeController@about');
 Route::get('resume.html','Home\HomeController@resume');
 Route::get('game.html','Home\HomeController@game');
 Route::get('detail/{id?}','Home\HomeController@detail');
-//empty Route
-Route::get('empty','Home\HomeController@empty');
 
-//Admin
-Route::group(['middleware' => ['web'],'namespace'=>'Admin'], function () {
-    //
+/*Admin*/
+Route::group(['middlewareGroups' => ['web'],'namespace'=>'Admin'], function () {
     
     Route::get('cy','IndexController@index');
     Route::get('theme','IndexController@theme');
@@ -57,18 +47,19 @@ Route::group(['middleware' => ['web'],'namespace'=>'Admin'], function () {
     
     //articles
     Route::resource('articles',"ArticlesController");
-    //Route::get('articles/add',"ArticlesController@add");  
+    Route::post('imagesUpload','ArticlesController@imagesUpload');
     Route::resource('articleCategory',"ArticleCategoryController");
+
 
     
 });
    
-
+/*
 Route::group(['middleware' => 'web'], function () {
- //Route::get('login', 'Auth\AuthController@getLogin');
-    Route::auth();
+    //Route::get('login', 'Auth\AuthController@getLogin');
+    //Route::auth();
 
     //Route::get('/home', 'HomeController@index');
 });
-
+*/
 

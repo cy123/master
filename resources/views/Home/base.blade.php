@@ -86,7 +86,13 @@
         <!-- Lists in Slidebars -->
         <ul class="sb-menu">
             <li><a href="index.html" class="animsition-link" title="Home">Home</a></li>
-            <li><a href="archives/index.html" class="animsition-link" title="archive">Archives</a></li>
+            
+            <li>
+                <a class="sb-toggle-submenu">Tags<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				    <li><a href="" class="animsition-link">Php<small>(2)</small></a></li>
+				</ul>
+            </li>
             <!-- Dropdown Menu -->
 			         
         	<li>

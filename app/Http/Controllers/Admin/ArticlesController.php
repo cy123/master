@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use DB;
-use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
+//use App\Http\Requests;
 use App\Model\Articles;
 use App\Model\ArticleCategory;
 use App\Http\Controllers\Controller;
@@ -83,4 +84,32 @@ class ArticlesController extends Controller
         if($res)
         return redirect()->back()->withInput()->withErrors('删除成功！');
     }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function imagesUpload(Request $request)
+    {
+
+        $file=$request->file('editormd-image-file');
+        //var_dump($file);die;
+        $path='./storage/app/public/';
+        $filename=$file->getClientOriginalName();
+        $flag=$file->move($path,$filename);
+        if($flag){
+            return response()->json([
+                'success' => 1,
+                'message' => '图片上传成功',
+                'url' => '/storage/app/public/'.$filename
+            ]);
+        }else{
+            return response()->json([
+                'success' => 0,
+                'message' => '图片上传失败',
+            ]);
+
+        }
+    }
+
 }

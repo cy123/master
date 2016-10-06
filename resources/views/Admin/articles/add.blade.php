@@ -99,7 +99,10 @@
                     width   : "100%",
                     height  : 400,
                     syncScrolling : "single",
-                    path    : "{{asset('public/Admin/editormd')}}/lib/"
+                    path    : "{{asset('public/Admin/editormd')}}/lib/",
+                    imageUpload    : true,
+                    imageFormats   : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                    imageUploadURL : "{{url('imagesUpload')}}"
                 });
                 
                 /*
