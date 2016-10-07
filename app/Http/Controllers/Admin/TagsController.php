@@ -26,7 +26,6 @@ class TagsController extends Controller
         $data=[
             'tag'=>$request->get('tag')
         ];
-
         $res=Tags::create($data);
         if($res)
             return redirect('tags');

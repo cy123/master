@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Home;
 use DB;
 use App\Http\Requests;
 use App\Model\Articles;
+use App\Model\Tags;
 use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
@@ -11,13 +12,13 @@ class HomeController extends Controller
     //
     public function index()
     {
-        //$articles=Articles::all();
+        $tags=Tags::all();
         $articles=DB::table('articles')
                 ->leftJoin('article_categories','articles.cate_id','=','article_categories.id')
                 ->select('articles.*','article_categories.name')
                 ->get();
-        $tags='';
-        return view('Home/index')->with('articles',$articles);
+
+        return view('Home/index')->with('articles',$articles)->with('tags',$tags);
     }
     
     public function categorys($args)

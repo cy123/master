@@ -2,7 +2,7 @@
 
 @section('tags')
     @foreach($tags as $tag)
-        <li><a href="" class="animsition-link">{{''}}<small>(2)</small></a></li>
+        <li><a href="" class="animsition-link">{{$tag->tag}}<small>(2)</small></a></li>
     @endforeach
 @endsection
 
