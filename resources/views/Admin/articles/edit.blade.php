@@ -45,7 +45,11 @@
                                 <div class="col-sm-10">
                                     <select class="form-control" name="cate_id">
                                         @foreach($allCates as $allCate)
-                                        <option value="{{$allCate->id}}">{{$allCate->name}}</option>
+                                            @if($article->cate_id==$allCate->id)
+                                                <option selected="selected" value="{{$allCate->id}}">{{$allCate->name}}</option>
+                                            @else
+                                                <option value="{{$allCate->id}}">{{$allCate->name}}</option>
+                                            @endif
                                         @endforeach
                                     </select>
                                 </div>
@@ -53,7 +57,16 @@
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label">标签</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tagId" placeholder="tag">
+                                    <select class="form-control" name="tag_id">
+                                        <!--<option value='0'>分类名</option>-->
+                                        @foreach($tags as $tag)
+                                            @if($article->tag_id==$tag->id)
+                                                <option selected="selected" value="{{$tag->id}}">{{$tag->tag}}</option>
+                                            @else
+                                                <option value="{{$tag->id}}">{{$tag->tag}}</option>
+                                            @endif
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div> 
                             <div class="form-group">

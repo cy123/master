@@ -90,10 +90,11 @@
             <li>
                 <a class="sb-toggle-submenu">Tags<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
-				    <!--
-                    <li><a href="" class="animsition-link">Php<small>(2)</small></a></li>
-                    -->
-                    @yield('tags')
+
+                        @foreach($tags as $key => $tag)
+                            <li><a href="" class="animsition-link">{{$key}}<small>({{$tag['row']}})</small></a></li>
+                        @endforeach
+
 				</ul>
             </li>
             <!-- Dropdown Menu -->
@@ -101,7 +102,9 @@
         	<li>
         		<a class="sb-toggle-submenu">Category<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
-				    <li><a href="categories/C-Cpp/index.html" class="animsition-link">Php<small>(2)</small></a></li>
+                    @foreach($categories as $category)
+				        <li><a href="categories/C-Cpp/index.html" class="animsition-link">{{$category->newHtml}}</a></li>
+                    @endforeach
 				</ul>
         	</li>
             <li>

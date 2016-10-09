@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use DB;
+use App\Model\Tags;
+use App\Model\ArticleCategory;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +16,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $tags=Tags::getTags();
+        $categories = (new ArticleCategory)->getCategory();
+        //dd($categories);
+        view()->share([
+            'tags'=>$tags,
+            'categories'=>$categories
+        ]);
     }
 
     /**

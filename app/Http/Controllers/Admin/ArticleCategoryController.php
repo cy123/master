@@ -14,8 +14,6 @@ class ArticleCategoryController extends Controller
     {
         $model=new ArticleCategory;
         $treeArr=$model->getCategory();
-        //print_r($data);die;
-
         //$category=\App\Model\ArticleCategory::all();
         //print_r($category);die;
         return view('Admin/category/index')->with('categorys',$treeArr);

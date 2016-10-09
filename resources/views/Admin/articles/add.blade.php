@@ -53,7 +53,12 @@
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label">标签</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tagId" placeholder="tag">
+                                    <select class="form-control" name="tag_id">
+                                        <option value='0'>分类名</option>
+                                        @foreach($tags as $tag)
+                                            <option value="{{$tag->id}}">{{$tag->tag}}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div> 
                             <div class="form-group">

@@ -64,9 +64,10 @@
        
 
                     </li>
-					 <li>
-                        <a class="J_menuItem" href="resume/index" ><i class="fa fa-file"></i> 我的简历</a>
-     
+                    <li>
+                        <a class="J_menuItem" href="resume/index" >
+                            <i class="fa fa-file"></i> <span>我的简历</span>
+                        </a>
                     </li>
                     <li>
                         <a href="#">

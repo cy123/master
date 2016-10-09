@@ -12,13 +12,13 @@ class HomeController extends Controller
     //
     public function index()
     {
-        $tags=Tags::all();
+
         $articles=DB::table('articles')
                 ->leftJoin('article_categories','articles.cate_id','=','article_categories.id')
                 ->select('articles.*','article_categories.name')
                 ->get();
 
-        return view('Home/index')->with('articles',$articles)->with('tags',$tags);
+        return view('Home/index')->with('articles',$articles);
     }
     
     public function categorys($args)

@@ -2,16 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use DB;
-use Illuminate\Support\Facades\Input;
+use App\Model\Tags;
 //use App\Http\Requests;
 use App\Model\Articles;
+use Illuminate\Http\Request;
 use App\Model\ArticleCategory;
 use App\Http\Controllers\Controller;
-use Illuminate\Database\Eloquent\Model;
-
-
 
 class ArticlesController extends Controller
 {
@@ -28,8 +25,9 @@ class ArticlesController extends Controller
     public function show()
     {
         $allCates=ArticleCategory::all('id','name');
+        $tags=Tags::all();
         //print_r($allCates);die;
-        return view('Admin/articles/add')->with('allCates',$allCates);
+        return view('Admin/articles/add')->with('allCates',$allCates)->with('tags',$tags);
     }
     
     public function store(Request $request)
@@ -37,7 +35,8 @@ class ArticlesController extends Controller
         $data=[
             'title'=>$request->get('title'),
             'content'=>$request->get('test-editormd-markdown-doc'),
-            'cate_id'=>$request->get('cate_id')
+            'cate_id'=>$request->get('cate_id'),
+            'tag_id'=>$request->get('tag_id')
         ];
 
         //unset($data['_token']);
@@ -51,8 +50,9 @@ class ArticlesController extends Controller
         $article=Articles::find($id);
         //print_r($article);die;
         $allCates=ArticleCategory::all('id','name');
+        $tags = Tags::all();
         return view('Admin/articles/edit')->with('article',$article)
-        ->with('allCates',$allCates);
+        ->with('allCates',$allCates)->with('tags',$tags);
     }
 
     public function update(Request $request,$id)
@@ -60,7 +60,8 @@ class ArticlesController extends Controller
         $data=[
             'title'=>$request->get('title'),
             'content'=>$request->get('test-editormd-markdown-doc'),
-            'cate_id'=>$request->get('cate_id')
+            'cate_id'=>$request->get('cate_id'),
+            'tag_id'=>$request->get('tag_id')
         ];
         $article=Articles::find($id);
         if($article->update($data)){

@@ -1,10 +1,6 @@
 @extends('Home.base')
 
-@section('tags')
-    @foreach($tags as $tag)
-        <li><a href="" class="animsition-link">{{$tag->tag}}<small>(2)</small></a></li>
-    @endforeach
-@endsection
+
 
 @section('link')
    <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
