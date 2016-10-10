@@ -152,7 +152,7 @@
                             <li><a href="{{url('index.html')}}" class="animsition-link">catteacher</a></li>
                             <li class="nolink"><span>Always </span>Creative.</li>
                             
-                            <li><a href="https://github.com/cy-github/master/tree/master" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            <li><a href="https://github.com/cy123/master" title="Github" target="_blank"><i class="icon-github"></i></a></li>
             
                             <li><a href="#" title="catnosleep-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
                             
@@ -212,15 +212,11 @@
             <div class="social">
                 <ul>
                     
-                    <li><a href="https://github.com/SuperKieran" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    <li><a href="https://github.com/cy123/master" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
                     
+
                     
-                    <li><a href="https://twitter.com/1tsKieran" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
-                    
-                    
-                    
-                    
-                    <li><a href="http://weibo.com/taokailun" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    <li><a href="#" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
                     
                 </ul>
             </div>

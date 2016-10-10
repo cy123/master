@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Home;
+
 use DB;
 use App\Http\Requests;
 use App\Model\Articles;
@@ -9,7 +10,10 @@ use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
-    //
+    /**
+     * index
+     * @return $this
+     */
     public function index()
     {
 
