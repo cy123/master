@@ -20,6 +20,7 @@ class Tags extends Model
         $tags = self::all();
         foreach ($tags as $tag){
             $tagArr[$tag->tag]['row']=0;
+            $tagArr[$tag->tag]['id']=$tag->id;
         }
         foreach ($articles as $article){
             foreach ($tags as $tag){

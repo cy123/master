@@ -5,11 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('public/Home/game/css/style.css')}}">
 @endsection
 
-@section('link')
-   <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
-   <li><a href="http://homeway.me/" class="animsition-link">小草</a></li>
-@endsection
-
 @section('content')
 <section id="intro">
     <div class="container">

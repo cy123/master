@@ -1,11 +1,5 @@
 @extends('Home.base')
 
-
-
-@section('link')
-   <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
-@endsection
-
 @section('scrollme')
 <section id="hero" class="scrollme">
     <div class="container-fluid element-img" style="background: url(//oeo26ov4o.qnssl.com/x.jpeg) no-repeat center center fixed;background-size: cover">
@@ -40,12 +34,12 @@
 	     <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="post/37/index.html">{{$article->title}}</a></h3>
+                    <h3><a href="{{url('detail/'.$article->id)}}">{{$article->title}}</a></h3>
                     <span>
                         <span class="post-meta">
 						  <time datetime="2016-05-10T08:01:05.000Z" itemprop="datePublished">
 							  {{$article->created_at}}
-						  </time>|<a href='tags/CSS3/index.html'>{{$article->name}}</a>
+						  </time>|<a href=''>{{$article->name}}</a>
     
     
 						</span>
@@ -53,7 +47,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-
+                        <?php echo substr($article->content,0,160);?>
                     </p>
                     
                     <p class="pull-right readMore">

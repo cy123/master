@@ -1,14 +1,4 @@
 @extends('Home.base')
-@section('categorys')
-	<li><a href="categories/C-Cpp/index.html" class="animsition-link">C/Cpp<small>(2)</small></a></li>
-
-	<li><a href="categories/CSS3/index.html" class="animsition-link">CSS3<small>(1)</small></a></li>
-@endsection
-@section('link')
-   <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
-
-   <li><a href="http://homeway.me/" class="animsition-link">小草</a></li>
-@endsection
 
 @section('css')
     <link rel="stylesheet" href="{{asset('public/Admin/editormd/css/editormd.preview.css')}}" />

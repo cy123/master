@@ -85,14 +85,14 @@
         </div>
         <!-- Lists in Slidebars -->
         <ul class="sb-menu">
-            <li><a href="index.html" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="{{url('index.html')}}" class="animsition-link" title="Home">Home</a></li>
             
             <li>
                 <a class="sb-toggle-submenu">Tags<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 
                         @foreach($tags as $key => $tag)
-                            <li><a href="" class="animsition-link">{{$key}}<small>({{$tag['row']}})</small></a></li>
+                            <li><a href="{{url('achives/'.$tag['id'])}}" class="animsition-link">{{$key}}<small>({{$tag['row']}})</small></a></li>
                         @endforeach
 
 				</ul>
@@ -103,7 +103,7 @@
         		<a class="sb-toggle-submenu">Category<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
                     @foreach($categories as $category)
-				        <li><a href="categories/C-Cpp/index.html" class="animsition-link">{{$category->newHtml}}</a></li>
+				        <li><a href="{{url('categories/'.$category->id)}}" class="animsition-link">{{$category->newHtml}}</a></li>
                     @endforeach
 				</ul>
         	</li>
@@ -111,7 +111,8 @@
                 <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
                 <ul class="sb-submenu">
                     <!--link-->
-					@yield('link')
+                    <li><a href="http://moell.cn/" class="animsition-link">Moell</a></li>
+                    <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
       
                 </ul>
             </li>
@@ -140,7 +141,7 @@
                 <div class="container">
                     <!-- Nav logo -->
                     <div class="logo">
-                        <a href="index.html" title="Logo" class="animsition-link">
+                        <a href="{{url('index.html')}}" title="Logo" class="animsition-link">
                          <img src="/public/Home/img/logo.png" alt="Logo" width="35px;"/> 
                         </a>
                     </div>

@@ -36,6 +36,8 @@ Route::get('about.html','Home\HomeController@about');
 Route::get('resume.html','Home\HomeController@resume');
 Route::get('game.html','Home\HomeController@game');
 Route::get('detail/{id?}','Home\HomeController@detail');
+Route::get('achives/{id?}','Home\HomeController@achives');
+Route::get('categories/{id?}','Home\HomeController@categories');
 
 /*Admin*/
 Route::group(['middlewareGroups' => ['web'],'namespace'=>'Admin'], function () {

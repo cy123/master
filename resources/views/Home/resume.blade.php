@@ -3,12 +3,6 @@
     <link rel="stylesheet" href="{{asset('public/Admin/editormd/css/editormd.preview.css')}}" />
 @endsection
 
-@section('link')
-   <li><a href="http://miibotree.com/" class="animsition-link">Miibotree</a></li>
-
-   <li><a href="http://homeway.me/" class="animsition-link">小草</a></li>
-@endsection
-
 @section('content')
 <section id="intro">
     <div class="container">
