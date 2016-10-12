@@ -60,8 +60,11 @@
             </div>
         </div>
         @endforeach
-        <nav class="pagination" role="pagination">
+        <nav class="pagination pull-right" role="pagination">
+          <!--
           <a class="pull-right" href="page/2/index.html">Older Posts ...</a>
+          -->
+            {{$articles->links()}}
         </nav>
     </div>
 </section>        
