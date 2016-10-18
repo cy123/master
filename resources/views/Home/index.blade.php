@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        <?php echo substr($article->content,0,160);?>
+                        <?php echo mb_substr($article->content,0,160);?>
                     </p>
                     
                     <p class="pull-right readMore">
