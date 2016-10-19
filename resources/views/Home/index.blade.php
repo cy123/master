@@ -9,7 +9,7 @@
                     <div>
                         
                         <h2></h2>
-                        <h1><p style="font-family: dancingfont;color: #D3D7CF;font-size: 30px;">If you really want to something,you will be action to go fot it!!! </p></h1>
+                        <h1><p style="font-family: dancingfont;color: #D3D7CF;font-size: 25px;">If you really want to something,you will be action to go fot it!!! </p></h1>
                         
                         <h2></h2>
                         <p></p>
