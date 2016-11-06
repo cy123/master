@@ -40,7 +40,7 @@
 
 @font-face {
 	font-family: 'dancingfont';
-	src:url('/public/Home/fonts/DancingScript-Regular.otf');
+	src:url('/Home/fonts/DancingScript-Regular.otf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -876,7 +876,7 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
 }
 .sb-menu li a {
 	
-	font-family: "dancingfont","Hiragino Sans GB", "Microsoft YaHei";
+	font-family: "Hiragino Sans GB", "Microsoft YaHei";
 	width: 100%; /* Makes links full width. */
 	display: inline-block;
 	/*font-style: normal;*/

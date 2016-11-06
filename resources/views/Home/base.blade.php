@@ -29,12 +29,12 @@
     <meta name="keywords" content="Kieran,BLOG" />
 
     <!-- Favicon, (keep icon in root folder) -->
-    <link rel="Shortcut Icon" href="/public/Home/favicon.ico" type="image/ico">
+    <link rel="Shortcut Icon" href="/Home/favicon.ico" type="image/ico">
 
     <link rel="alternate" href="/atom.xml" title="KIERAN&#39;S BLOG" type="application/atom+xml">
-    <link rel="stylesheet" href="/public/Home/css/all.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/Home/css/all.css" media="screen" type="text/css">
     
-    <link rel="stylesheet" href="/public/Home/highlightjs/xcode.css" type="text/css">
+    <link rel="stylesheet" href="/Home/highlightjs/xcode.css" type="text/css">
     @yield('css')
     
 
@@ -63,8 +63,8 @@
     <!-- Load these in the <head> for quicker IE8+ load times -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="/public/Home/js/html5shiv.min.js"></script>
-    <script src="/public/Home/js/respond.min.js"></script>
+    <script src="/Home/js/html5shiv.min.js"></script>
+    <script src="/Home/js/respond.min.js"></script>
     <![endif]-->
   
   <!--<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="atom.xml">-->
@@ -83,7 +83,7 @@
 
     <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
         <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
-            <img src="/public/Home/img/close.png" alt="Close"/>
+            <img src="/Home/img/close.png" alt="Close"/>
         </div>
         <!-- Lists in Slidebars -->
         <ul class="sb-menu">
@@ -144,7 +144,7 @@
                     <!-- Nav logo -->
                     <div class="logo">
                         <a href="{{url('index.html')}}" title="Logo" class="animsition-link">
-                         <img src="/public/Home/img/logo.png" alt="Logo" width="35px;"/> 
+                         <img src="/Home/img/logo.png" alt="Logo" width="35px;"/>
                         </a>
                     </div>
                     <!-- // Nav logo -->
@@ -246,13 +246,13 @@
         resizeHero();
     });
 </script>
-<script src="/public/Home/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
-<script src="/public/Home/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
-<script src="/public/Home/js/scripts.js"></script><!-- Theme scripts -->
+<script src="/Home/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/Home/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/Home/js/scripts.js"></script><!-- Theme scripts -->
 
 
-<link rel="stylesheet" href="/public/Home/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/public/Home/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="/Home/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/Home/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 $('#intro').find('img').each(function(){
   var alt = this.alt;

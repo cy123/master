@@ -1,7 +1,7 @@
 @extends('Home.base')
 
 @section('css')
-    <link rel="stylesheet" href="{{asset('public/Admin/editormd/css/editormd.preview.css')}}" />
+    <link rel="stylesheet" href="{{asset('/Admin/editormd/css/editormd.preview.css')}}" />
 @endsection
 
 
@@ -22,14 +22,14 @@
 @endsection
 
 @section('js')
-        <script src="{{asset('public/Admin/editormd/lib/marked.min.js')}}"></script>
-        <script src="{{asset('public/Admin/editormd/lib/prettify.min.js')}}"></script>       
-        <script src="{{asset('public/Admin/editormd/lib/raphael.min.js')}}"></script>
-        <script src="{{asset('public/Admin/editormd/lib/underscore.min.js')}}"></script>
-        <script src="{{asset('public/Admin/editormd/lib/sequence-diagram.min.js')}}"></script>
-        <script src="{{asset('public/Admin/editormd/lib/flowchart.min.js')}}"></script>
-        <script src="{{asset('public/Admin/editormd/lib/jquery.flowchart.min.js')}}"></script>
-        <script src="{{asset('public/Admin/editormd/editormd.js')}}"></script>  
+        <script src="{{asset('/Admin/editormd/lib/marked.min.js')}}"></script>
+        <script src="{{asset('/Admin/editormd/lib/prettify.min.js')}}"></script>
+        <script src="{{asset('/Admin/editormd/lib/raphael.min.js')}}"></script>
+        <script src="{{asset('/Admin/editormd/lib/underscore.min.js')}}"></script>
+        <script src="{{asset('/Admin/editormd/lib/sequence-diagram.min.js')}}"></script>
+        <script src="{{asset('/Admin/editormd/lib/flowchart.min.js')}}"></script>
+        <script src="{{asset('/Admin/editormd/lib/jquery.flowchart.min.js')}}"></script>
+        <script src="{{asset('/Admin/editormd/editormd.js')}}"></script>
    <script type="text/javascript">
     $(function() {
         var testEditormdView, testEditormdView2;
