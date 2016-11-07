@@ -89,14 +89,14 @@ class ArticlesController extends Controller
 
         $file=$request->file('editormd-image-file');
         //var_dump($file);die;
-        $path='./storage/app/public/';
+        $path='./Upload/images/';
         $filename=$file->getClientOriginalName();
         $flag=$file->move($path,$filename);
         if($flag){
             return response()->json([
                 'success' => 1,
                 'message' => '图片上传成功',
-                'url' => '/storage/app/public/'.$filename
+                'url' => $path.$filename
             ]);
         }else{
             return response()->json([
